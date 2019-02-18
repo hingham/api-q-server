@@ -35,7 +35,7 @@ Example for teams:
 
 ### Modules:
 #### API:
-* index - starts server, creates global Q, updates the number of pings on a timeout function
+* index - starts server, creates global Q, updates the number of pings on a timeout function (every hour)
 * publish.js - Q Class, methods for global Q
 * players.js & teams.js - shema for the different models
 * mongo.js - opperates CRUD on the API, calls published on the Q and passes payload
