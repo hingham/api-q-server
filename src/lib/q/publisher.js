@@ -4,6 +4,7 @@ const io = require('socket.io-client');
 
 
 const SERVER = process.env.Q_SERVER || 'http://localhost:3333';
+console.log('server in publisher file: ', process.env.Q_SERVER )
 
 class Q {
 
@@ -29,6 +30,8 @@ class Q {
   }
    
   publish(queue, event, payload) {
+    console.log('server in publish file: ', process.env.Q_SERVER )
+
     this.count +=1;
     let pings = this.pings;
 
