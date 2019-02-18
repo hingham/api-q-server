@@ -19,6 +19,6 @@ function setPings(){
   console.log('the Q', global.Q);
 }
 
-setInterval(setPings, 600000);
+setInterval(setPings, 60000);
 
 require('./src/app.js').start(process.env.PORT);
