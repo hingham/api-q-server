@@ -9,8 +9,8 @@ setTimeout(function countPings() {
 
 }, 2000)
 
-// const SERVER = process.env.Q_SERVER || 'http://localhost:3333';
-const SERVER = 'http://localhost:3333';
+const SERVER = process.env.Q_SERVER || 'http://localhost:3333';
+
 class Q {
 
   constructor(q) {
