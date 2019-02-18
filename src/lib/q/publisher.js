@@ -2,12 +2,6 @@
 
 const io = require('socket.io-client');
 
-let pings = [];
-
-setTimeout(function countPings() {
-    pings.push(Q.count);
-
-}, 2000)
 
 const SERVER = process.env.Q_SERVER || 'http://localhost:3333';
 
